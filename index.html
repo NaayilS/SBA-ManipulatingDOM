@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Button</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Catch the Button Game!</h1>
+
+        <!-- Include at least one form and/or input with HTML attribute validation -->
+        <form id="username-form">
+            <label for="username">Enter Your Name:</label>
+            <input type="text" id="username" name="username" required minlength="3">
+            <button type="submit">Start Game</button>
+        </form>
+
+        <!-- Game area -->
+        <div id="game" class="hidden">
+            <p id="greeting"></p>
+            <!-- Button that moves around -->
+            <button id="moving-button">Catch me!</button>
+            <p id="score">Score: 0</p>
+            <p id="timer">Time Left: 5s</p>
+        </div>
+
+        <!-- Game over screen -->
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p id="final-score"></p>
+            <h3>Score Log</h3>
+            <ul id="score-log"></ul>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Linking the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+

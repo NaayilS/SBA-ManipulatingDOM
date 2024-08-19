@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-container {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+
+#moving-button {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#score, #timer {
+  margin-top: 20px;
+}
+
+#game-over {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#score-log {
+  list-style: none;
+  padding: 0;
+}
